@@ -1,92 +1,31 @@
-<template>
-  <div>
-    <md-card class="md-primary">
-      <md-card-header>
-        <md-card-header-text>
-          <div class="md-title">Primary color</div>
-          <div class="md-subhead">Subtitle here</div>
-        </md-card-header-text>
+<template >
+  <div >
 
-        <md-card-media>
-          <img src="/assets/examples/avatar-2.jpg" alt="Avatar">
-        </md-card-media>
-      </md-card-header>
-
-      <md-card-actions>
-        <md-button>Action</md-button>
-        <md-button>Action</md-button>
-      </md-card-actions>
-    </md-card>
-
-    <md-card class="md-accent" md-with-hover>
+    <md-card class="md-primary" md-theme="orange-card" >
       <md-ripple>
         <md-card-header>
-          <div class="md-title">Accent color</div>
+          <div class="md-title">Quotation Wizard</div>
           <div class="md-subhead">With hover and ripple effects</div>
         </md-card-header>
 
-        <md-card-content>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
+        <md-card-content>  
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+          <h4>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel. Adhuc invidunt duo ex. Eu tantas dolorum ullamcorper qui.</h4>
         </md-card-content>
-
-        <md-card-actions>
-          <md-button>Action</md-button>
-          <md-button>Action</md-button>
-        </md-card-actions>
+        <br><br>
       </md-ripple>
+      <md-button class="md-raised">Purchase this template</md-button>
+      <br><br><br><br><br>
     </md-card>
 
-    <md-card class="md-primary" md-theme="green-card">
-      <md-card-header>
-        <md-card-header-text>
-          <div class="md-title">Green custom theme</div>
-          <div class="md-subhead">Subtitle here</div>
-        </md-card-header-text>
-
-        <md-card-media>
-          <img src="/assets/examples/avatar-2.jpg" alt="Avatar">
-        </md-card-media>
-      </md-card-header>
-    </md-card>
-
-    <md-card class="md-primary" md-theme="purple-card" md-with-hover>
-      <md-ripple>
-        <md-card-header>
-          <div class="md-title">Purple primary color</div>
-          <div class="md-subhead">With hover and ripple effects</div>
-        </md-card-header>
-
-        <md-card-content>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
-        </md-card-content>
-      </md-ripple>
-    </md-card>
-
-    <md-card class="md-primary" md-theme="black-card">
-      <md-card-header>
-        <md-card-header-text>
-          <div class="md-title">True black primary color</div>
-          <div class="md-subhead">Subtitle here</div>
-        </md-card-header-text>
-
-        <md-card-media>
-          <img src="/assets/examples/avatar-2.jpg" alt="Avatar">
-        </md-card-media>
-      </md-card-header>
-    </md-card>
-
-    <md-card class="md-primary" md-theme="orange-card" md-with-hover>
-      <md-ripple>
-        <md-card-header>
-          <div class="md-title">Orange primary color</div>
-          <div class="md-subhead">With hover and ripple effects</div>
-        </md-card-header>
-
-        <md-card-content>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
-        </md-card-content>
-      </md-ripple>
-    </md-card>
   </div>
 </template>
 
@@ -98,10 +37,19 @@ export default {
 
 <style lang="scss" scoped>
 
+  .md-raised {
+    color: #4527a0;
+    background-color: #fff;
+    border: 2px solid #e040fb;
+    padding: 10px;
+    border-radius: 50px 20px;
+    width: 335px;
+    height: 65px;
+    font-size: 18px;
 
-
+  }
   .md-card {
-    width: 320px;
+    width: 100%;
     margin: 4px;
     display: inline-block;
     vertical-align: top;

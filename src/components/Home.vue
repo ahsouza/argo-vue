@@ -5,10 +5,10 @@
       <div class="section">
         <b-container fluid class="bv-example-row">
           <b-row>
-            <b-col id="col-1" sm="6" md="6">
+            <b-col id="col-1" style="background-color: #4527a0; color: #fff;" sm="6" md="6">
               <MdCards />
             </b-col>
-            <b-col id="col-2" sm="5" offset-sm="6" md="6" offset-md="0">
+            <b-col id="col-2" style="background-color: #fff;" sm="5" offset-sm="6" md="6" offset-md="0">
               <Checkbox />
               
             </b-col>
@@ -58,7 +58,7 @@ export default {
       return {
         options: {
           paddingTop: '2px',
-          sectionsColor: ['#fff', '#F57C00', '#C2185B', '#00BCD4'],
+          sectionsColor: ['#4527a0', '#F57C00', '#C2185B', '#00BCD4'],
         },
       }
     },
