@@ -43,8 +43,8 @@ export default {
     border: 2px solid #e040fb;
     padding: 10px;
     border-radius: 50px 20px;
-    width: 335px;
-    height: 65px;
+    width: 305px;
+    height: 55px;
     font-size: 18px;
 
   }

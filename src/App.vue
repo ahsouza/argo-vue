@@ -1,22 +1,43 @@
-
-
 <template>
 <div id="app">
   <div class="page-container md-layout-column">
-    <md-toolbar class="md-primary">
+    <md-toolbar class="md-primary" style="background-color: #311b92;">
       <md-button class="md-icon-button" @click="showNavigation = true">
         <md-icon>menu</md-icon>
       </md-button>
-      <span class="md-title">My Title</span>
+      <span class="md-title">Argo Vue</span>
+
+
+      <md-button class="md-icon-button" style="margin-left: 20%;">
+        <span style="font-size: 24px;">
+          <i class="fab fa-facebook-square"></i>
+        </span>
+      </md-button>
+      <md-button class="md-icon-button" >
+        <span style="font-size: 24px;">
+          <i class="fab fa-twitter"></i>
+        </span>  
+      </md-button>
+      <md-button class="md-icon-button" >
+        <span style="font-size: 24px;">
+          <i class="fab fa-linkedin"></i>
+        </span>  
+      </md-button>
+      <md-button class="md-icon-button" >
+        <span style="font-size: 24px;">
+          <i class="fab fa-google"></i>
+        </span>  
+      </md-button>
+
 
       <div class="md-toolbar-section-end">
-        <md-button @click="showSidepanel = true">Favorites</md-button>
+        <md-button @click="showSidepanel = true"><md-icon>contacts</md-icon></md-button>
       </div>
     </md-toolbar>
 
     <md-drawer :md-active.sync="showNavigation">
       <md-toolbar class="md-transparent" md-elevation="0">
-        <span class="md-title">My App name</span>
+        <span class="md-title">Argo Vue</span>
       </md-toolbar>
 
       <md-list>
@@ -78,14 +99,20 @@
       <router-view/>
     </md-content>
   </div>
+      <MdSpeedDial />
 
 
   </div>
 </template>
 
 <script>
+import MdSpeedDial from './components/material-design/MdSpeedDial'
+
   export default {
     name: 'Temporary',
+    components: {
+      MdSpeedDial
+  },
     data: () => ({
       showNavigation: false,
       showSidepanel: false
@@ -100,6 +127,9 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  }
+  .md-primary {
+
   }
   .page-container {
     min-height: 300px;

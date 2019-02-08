@@ -5,11 +5,11 @@
       <div class="section">
         <b-container fluid class="bv-example-row">
           <b-row>
-            <b-col id="col-1" style="background-color: #4527a0; color: #fff;" sm="6" md="6">
+            <b-col id="col-1" style="background-color: #651fff; color: #fff;" sm="6" md="6">
               <MdCards />
             </b-col>
             <b-col id="col-2" style="background-color: #fff;" sm="5" offset-sm="6" md="6" offset-md="0">
-              <Checkbox />
+              <MdSteppers />
               
             </b-col>
           </b-row>
@@ -17,7 +17,7 @@
 
       </div>
       <div class="section">
-        Section2
+        <Carousel />
       </div>
       <div class="section">
         Section3
@@ -38,6 +38,7 @@ import FormFile from './formFile'
 import Carousel from './carousel'
 import Progress from './progress'
 import MdCards from './MdCards'
+import MdSteppers from './material-design/MdSteppers'
 import MdInput from './MdCards'
 import FullPage from 'vue-fullpage.js'
 
@@ -47,6 +48,7 @@ export default {
     HelloWorld,
     Checkbox,
     FormFile,
+    MdSteppers,
     MdCards,
     MdInput,
     Carousel,
@@ -58,7 +60,7 @@ export default {
       return {
         options: {
           paddingTop: '2px',
-          sectionsColor: ['#4527a0', '#F57C00', '#C2185B', '#00BCD4'],
+          sectionsColor: ['#651fff', '#ccff90', '#4fc3f7', '#651fff'],
         },
       }
     },
