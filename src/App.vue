@@ -5,26 +5,20 @@
       <md-button class="md-icon-button" @click="showNavigation = true">
         <md-icon>menu</md-icon>
       </md-button>
-      <span class="md-title">Argo Vue</span>
-
 
       <md-button class="md-icon-button" style="margin-left: 20%;">
-        <span style="font-size: 24px;">
+        <span style="font-size: 22px;">
           <i class="fab fa-facebook-square"></i>
         </span>
       </md-button>
       <md-button class="md-icon-button" >
-        <span style="font-size: 24px;">
+        <span style="font-size: 22px;">
           <i class="fab fa-twitter"></i>
         </span>  
       </md-button>
+      
       <md-button class="md-icon-button" >
-        <span style="font-size: 24px;">
-          <i class="fab fa-linkedin"></i>
-        </span>  
-      </md-button>
-      <md-button class="md-icon-button" >
-        <span style="font-size: 24px;">
+        <span style="font-size: 22px;">
           <i class="fab fa-google"></i>
         </span>  
       </md-button>
