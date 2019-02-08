@@ -1,27 +1,64 @@
 <template>
   <div>
-    <b-form-group label="What your poject need?" style="font-size: 20px;">
-      <b-form-checkbox-group style="font-size: 18px; display: inline-block;" v-model="selected" name="flavour1" :options="options">
-      </b-form-checkbox-group>
-    </b-form-group>
+    <md-checkbox v-model="array" value="1">Array</md-checkbox>
+    <md-checkbox v-model="array" value="2">Array</md-checkbox>
+    <md-checkbox v-model="boolean">Boolean</md-checkbox>
+    <md-checkbox v-model="string" value="my-checkbox">String</md-checkbox>
+    <md-checkbox v-model="novalue">No Value</md-checkbox>
+    <md-checkbox v-model="disabled" disabled>Disabled</md-checkbox>
+    <md-checkbox v-model="obj" :value="obj1">Object 1</md-checkbox>
+    <md-checkbox v-model="obj" :value="obj2">Object 2</md-checkbox>
 
+    <md-checkbox v-model="indeterminate" indeterminate>Indeterminate</md-checkbox>
+
+    <table>
+      <tr>
+        <th>Array</th>
+        <th>Boolean</th>
+        <th>String</th>
+        <th>No Value</th>
+        <th>Object</th>
+      </tr>
+
+      <tr>
+        <td>{{ array }}</td>
+        <td>{{ boolean }}</td>
+        <td>{{ string }}</td>
+        <td>{{ novalue }}</td>
+        <td>{{ obj }}</td>
+      </tr>
+    </table>
   </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      selected: [],
-      options: [
-        {text: 'Custom interface and layout', value: 'interface and layout'},
-        {text: 'Web site design', value: 'Site'},
-        {text: 'Seo optimization', value: 'Seo'},
-        {text: 'CMS integrations (Wordpress)', value: 'CMS integrations'},
-        {text: 'Newsletter Campaign', value: 'Newsletter'},
-        {text: 'Logo Design', value: 'Logo'}
-      ]
+  export default {
+    data: () => ({
+      array: [],
+      boolean: false,
+      string: null,
+      novalue: null,
+      disabled: true,
+      obj1: {name: 'obj1'},
+      obj2: {name: 'obj2'},
+      obj: null,
+      indeterminate: true
+    })
+  }
+</script>
+import 'vue-material/dist/vue-material.min.css'
+
+<style lang="scss" scoped>
+  .md-checkbox {
+    display: flex;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+
+    th {
+      text-align: left;
     }
   }
-}
-</script>
+</style>

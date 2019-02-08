@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div id="div-m" style="text-shadow: 1px 1px 2px #333; height:800px">
     <b-carousel id="carousel1"
-                style="text-shadow: 1px 1px 2px #333;"
+                style="text-shadow: 1px 1px 2px #333; "
                 controls
                 indicators
                 background="#00BCD4"
                 color="black"
-                :interval="20000"
+                :interval="800000000"
                 v-model="slide"
                 @sliding-start="onSlideStart"
                 @sliding-end="onSlideEnd"
@@ -17,7 +17,6 @@
                         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
       >fdsfsfs</b-carousel-slide>
 
-      <!-- Slides with custom text -->
       <b-carousel-slide caption="2/5" img-blank >
         <Checkbox />
         <hr>
@@ -62,6 +61,44 @@
   </div>
 </template>
 
+<style>
+
+
+@media (min-width: 1281px) {
+  #div-m {
+    background-color: blue;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #div-m {
+    background-color:red;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #div-m {
+    background-color:red;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  #div-m {
+    background-color:red;
+  }
+  #carousel1 {
+    background-color:red;
+  }
+}
+
+
+
+</style>
 <script>
 import Checkbox from './checkbox'
 import Form from './form'

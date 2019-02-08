@@ -3,31 +3,17 @@
     <full-page :options="options">
 
       <div class="section">
-
-
-
-
-
-
-<b-container fluid class="bv-example-row">
-  <b-row>
-    <b-col id="col-1" sm="5" md="6">
-      sm="5" md="6"sm="5" md="6"sm="5" md="6"sm="5" md="6"
-      sm="5" md="6"sm="5" md="6"sm="5" md="6"sm="5" md="6"
-      sm="5" md="6"sm="5" md="6"sm="5" md="6"sm="5" md="6"
-      sm="5" md="6"sm="5" md="6"sm="5" md="6"sm="5" md="6"
-      sm="5" md="6"sm="5" md="6"sm="5" md="6"sm="5" md="6"
-      sm="5" md="6"sm="5" md="6"sm="5" md="6"sm="5" md="6"
-    </b-col>
-    <b-col id="col-2" sm="5" offset-sm="2" md="6" offset-md="0">
-      
-      <Carousel />
-      
-    </b-col>
-  </b-row>
-
-</b-container>
-
+        <b-container fluid class="bv-example-row">
+          <b-row>
+            <b-col id="col-1" sm="6" md="6">
+              <MdCards />
+            </b-col>
+            <b-col id="col-2" sm="5" offset-sm="6" md="6" offset-md="0">
+              <Checkbox />
+              
+            </b-col>
+          </b-row>
+        </b-container>
 
       </div>
       <div class="section">
@@ -51,6 +37,8 @@ import TextArea from './textArea'
 import FormFile from './formFile'
 import Carousel from './carousel'
 import Progress from './progress'
+import MdCards from './MdCards'
+import MdInput from './MdCards'
 import FullPage from 'vue-fullpage.js'
 
 export default {
@@ -59,6 +47,8 @@ export default {
     HelloWorld,
     Checkbox,
     FormFile,
+    MdCards,
+    MdInput,
     Carousel,
     Form,
     TextArea,
@@ -67,7 +57,7 @@ export default {
   data() {
       return {
         options: {
-          paddingTop: '10px',
+          paddingTop: '2px',
           sectionsColor: ['#fff', '#F57C00', '#C2185B', '#00BCD4'],
         },
       }
@@ -87,7 +77,6 @@ export default {
 }
 #col-2 {
   background-color: #fff;
-  
 }
 .home>div:nth-child(1){
   background: #fff;
