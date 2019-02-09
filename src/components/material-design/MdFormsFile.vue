@@ -1,7 +1,7 @@
 <template>
   <div>
     <md-field>
-      <label>Single</label>
+      <label>Abrir arquivo</label>
       <md-file v-model="single" />
     </md-field>
 

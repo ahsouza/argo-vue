@@ -1,5 +1,5 @@
 <template>
-<div id="app">
+<div id="app" class="animated fadeIn">
   <div class="page-container md-layout-column">
     <md-toolbar class="md-primary" style="background-color: #311b92;">
       <md-button class="md-icon-button" @click="showNavigation = true">
@@ -10,17 +10,20 @@
         <span style="font-size: 22px;">
           <i class="fab fa-facebook-square"></i>
         </span>
+        <md-tooltip md-direction="down" style="font-size: 18px; margin-top: 3%;">Ver Facebook</md-tooltip>
       </md-button>
       <md-button class="md-icon-button" >
         <span style="font-size: 22px;">
           <i class="fab fa-twitter"></i>
         </span>  
+        <md-tooltip md-direction="down" style="font-size: 18px; margin-top: 3%;">Ver Twitter</md-tooltip>
       </md-button>
       
       <md-button class="md-icon-button" >
         <span style="font-size: 22px;">
           <i class="fab fa-google"></i>
         </span>  
+        <md-tooltip md-direction="down" style="font-size: 18px; margin-top: 3%;">Ver Google+</md-tooltip>
       </md-button>
 
 
@@ -121,6 +124,7 @@ import MdSpeedDial from './components/material-design/MdSpeedDial'
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+
   }
   .md-primary {
 
@@ -133,6 +137,7 @@ import MdSpeedDial from './components/material-design/MdSpeedDial'
   }
   .md-drawer {
     width: 230px;
+
     max-width: calc(100vw - 125px);
   }
 

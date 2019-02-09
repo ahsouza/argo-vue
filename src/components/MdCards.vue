@@ -1,30 +1,16 @@
 <template >
   <div >
 
-    <md-card class="md-primary" md-theme="orange-card" >
-      <md-ripple>
-        <md-card-header>
-          <div class="md-title">Quotation Wizard</div>
-          <div class="md-subhead">With hover and ripple effects</div>
-        </md-card-header>
+    
+    
+    
+<h1>Quotation Wizard</h1>
 
-        <md-card-content>  
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-          <h4>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel. Adhuc invidunt duo ex. Eu tantas dolorum ullamcorper qui.</h4>
-        </md-card-content>
-        <br><br>
-      </md-ripple>
-      <md-button class="md-raised">Purchase this template</md-button>
-      <br><br><br><br><br>
-    </md-card>
+Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel. Adhuc invidunt duo ex. Eu tantas dolorum ullamcorper qui.
+      
+  <md-button class="md-raised">Purchase this template
+    <md-tooltip md-direction="down" style="font-size: 22px; height: 38px; width: 120px; padding: 5px; text-align:center;margin-top: 40px;">Top</md-tooltip>
+  </md-button>
 
   </div>
 </template>
@@ -42,16 +28,10 @@ export default {
     background-color: #fff;
     border: 2px solid #e040fb;
     padding: 10px;
-    border-radius: 50px 20px;
+    border-radius: 50px 50px;
     width: 305px;
     height: 55px;
     font-size: 18px;
 
-  }
-  .md-card {
-    width: 100%;
-    margin: 4px;
-    display: inline-block;
-    vertical-align: top;
   }
 </style>

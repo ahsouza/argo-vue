@@ -5,15 +5,19 @@
       <div class="section">
         <b-container fluid class="bv-example-row">
           <b-row>
-            <b-col id="col-1" style="background-color: #651fff; color: #fff;" sm="6" md="6">
+            <b-col id="col-1" style="background-color: #651fff; color: #fff;" sm="12" md="12" lg="6" xl="6">
               <MdCards />
             </b-col>
-            <b-col id="col-2" style="background-color: #fff;" sm="5" offset-sm="6" md="6" offset-md="0">
+            <b-col id="col-2" style="background-color: #fff;" sm="12" offset-sm="12" md="12" lg="6" xl="6">
               <MdSteppers />
               
             </b-col>
           </b-row>
         </b-container>
+
+
+
+
 
       </div>
       <div class="section">
@@ -70,14 +74,40 @@ export default {
 }
 </script>
 <style>
+  .md-layout-item {
+    height: 40px;
+
+    &:nth-child(1) {
+      background: md-get-palette-color(grey, 300);
+    }
+
+    &:nth-child(2) {
+      background: md-get-palette-color(grey, 400);
+    }
+
+    &:nth-child(3) {
+      background: md-get-palette-color(grey, 500);
+    }
+  }
+
 .right-div{
   padding:200px; 
 }
-#col-1 {
-  background-color: #fff;
-;  color: #00BCD4;
+.bv-example-row #col-1 {
+  color: #00BCD4;
+  margin-top: 0.00005%;
+  height: 968px;
+  padding: 10%;
 }
-#col-2 {
+.bv-example-row #col-2 {
+  padding: 20px;
+  margin-top: 4%;
+  background-color: red;
+
+}
+.bv-example-row {
+  height: 100%;
+
   background-color: #fff;
 }
 .home>div:nth-child(1){

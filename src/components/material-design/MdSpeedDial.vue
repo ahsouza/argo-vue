@@ -1,7 +1,7 @@
 <template>
   <div class="example">
     <md-speed-dial :class="bottomPosition">
-      <md-speed-dial-target>
+      <md-speed-dial-target class="animated fadeInRight">
         <md-icon>add</md-icon>
       </md-speed-dial-target>
 
