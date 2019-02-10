@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import Checkbox from './../checkbox'
+import Checkbox from './MdCheckbox'
 import MdInputTextArea from './MdInputTextArea'
 import MdFormsSelect from './MdFormsSelect'
 import MdFormsInput from './MdFormsInput'

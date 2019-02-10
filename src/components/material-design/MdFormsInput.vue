@@ -1,7 +1,5 @@
 <template>
   <div>
-
-
     <md-field>
       <label>Nome</label>
       <md-input v-model="type"></md-input>
@@ -21,9 +19,6 @@
       <label>Telefone</label>
       <md-input v-model="number" type="number"></md-input>
     </md-field>
-
-
-
   </div>
 </template>
 

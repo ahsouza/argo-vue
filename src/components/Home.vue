@@ -6,22 +6,16 @@
         <b-container fluid class="bv-example-row">
           <b-row>
             <b-col id="col-1" style="background-color: #651fff; color: #fff;" sm="12" md="12" lg="6" xl="6">
-              <MdCards />
+              <Cards />
             </b-col>
             <b-col id="col-2" style="background-color: #fff;" sm="12" offset-sm="12" md="12" lg="6" xl="6">
-              <MdSteppers />
-              
+              <Steppers />
             </b-col>
           </b-row>
         </b-container>
-
-
-
-
-
       </div>
       <div class="section">
-        <Carousel />
+        Section3
       </div>
       <div class="section">
         Section3
@@ -34,29 +28,21 @@
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
-import Checkbox from './checkbox'
-import Form from './form'
-import TextArea from './textArea'
-import FormFile from './formFile'
-import Carousel from './carousel'
-import Progress from './progress'
-import MdCards from './MdCards'
-import MdSteppers from './material-design/MdSteppers'
-import MdInput from './MdCards'
+import Cards from './material-design/MdCard'
+import Checkbox from './material-design/MdCheckbox'
+import Header from './material-design/MdHeader'
+import FormFile from './material-design/MdFormsFile'
+import TextArea from './material-design/MdInputTextArea'
+import Steppers from './material-design/MdSteppers'
 import FullPage from 'vue-fullpage.js'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
     Checkbox,
+    Cards,
     FormFile,
-    MdSteppers,
-    MdCards,
-    MdInput,
-    Carousel,
-    Form,
+    Steppers,
     TextArea,
     FullPage
   },
