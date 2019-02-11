@@ -4,7 +4,7 @@ const
  path = require('path')
 module.exports = () =>{
  app = express()
- app.use(serveStatic(path.join(__dirname, 'dist')))
+ app.use(serveStatic(path.join(__dirname, '/dist')))
 
  return app
 }
