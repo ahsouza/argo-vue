@@ -1,9 +1,5 @@
-const 
- express = require('express'),
- serveStatic = require("serve-static"),
- path = require('path'),
- app = express()
+const
+ app = require('./express.config')(),
+ port = process.env.PORT || 8080
 
-app.use(serveStatic(__dirname + "/dist"))
-const port = process.env.PORT || 5000
-app.listen(port)
+app.listen(port, () => { console.log(`Server listening in port ${port}`)})
