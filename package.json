@@ -5,9 +5,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "node build/build.js",
-    "postinstall": "if test \"$NODE_ENV\" = \"production\" ; then npm run build ; fi ",
+    "build": "vue-cli-service build",
+    // "postinstall": "if test \"$NODE_ENV\" = \"production\" ; then npm run build ; fi ",
+    "postinstall": "npm install express",
     "heroku-postbuild": "webpack -p", 
+    "dev": "node server.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
