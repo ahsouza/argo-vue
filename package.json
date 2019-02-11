@@ -4,12 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "postinstall": "npm install express",
-    "heroku-postbuild": "webpack -p", 
-    "dev": "node server.js",
-    "lint": "vue-cli-service lint"
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" ",
+    "start": "node server.js",
+    "heroku-postbuild": "npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
     "bootstrap": "^4.1.0",
@@ -23,7 +20,7 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.16",
+    "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.16",
     "@vue/cli-service": "^3.0.0-beta.16",
     "express": "^4.16.4",
