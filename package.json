@@ -5,10 +5,12 @@
   "private": true,
   "scripts": {
     "dev": "concurrently --kill-others-on-fail \"npm run server\" ",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "start": "node server.js"
   },
   "dependencies": {
+    "@typeform/embed": "^0.7.0",
     "bootstrap": "^4.1.0",
     "bootstrap-vue": "^2.0.0-rc.7",
     "fullpage.js": "^2.9.7",

@@ -14,8 +14,10 @@
           </b-row>
         </b-container>
       </div>
-      <div class="section">
-        Section3
+      <div class="section2" id="section-typeform">
+        Section2
+
+
       </div>
       <div class="section">
         Section3
@@ -33,6 +35,7 @@ import Checkbox from './material-design/MdCheckbox'
 import Header from './material-design/MdHeader'
 import FormFile from './material-design/MdFormsFile'
 import TextArea from './material-design/MdInputTextArea'
+import TypeformEmbed from '@typeform/embed'
 import Steppers from './material-design/MdSteppers'
 import FullPage from 'vue-fullpage.js'
 
@@ -41,6 +44,7 @@ export default {
   components: {
     Checkbox,
     Cards,
+    TypeformEmbed,
     FormFile,
     Steppers,
     TextArea,
@@ -59,6 +63,26 @@ export default {
     }
 }
 </script>
+
+
+<script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", function() {
+      var el = document.getElementById("section-typeform");
+      
+      // When instantiating a widget embed, you must provide the DOM element
+      // that will contain your typeform, the URL of your typeform, and your
+      // desired embed settings
+      window.typeformEmbed.makeWidget(el, "https://admin.typeform.com/to/cVa5IG", {
+        hideFooter: true,
+        hideHeaders: true,
+        opacity: 0
+      });
+    });
+  </script>
+
+
+
 <style>
   .md-layout-item {
     height: 40px;
