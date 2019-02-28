@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import BootstrapVue from 'bootstrap-vue'
 import MaterialVue from 'vue-material'
+import './registerServiceWorker'
 
 Vue.use(BootstrapVue)
 Vue.use(MaterialVue)
